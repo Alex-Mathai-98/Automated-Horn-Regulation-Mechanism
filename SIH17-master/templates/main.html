@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="{%static "jquery.js"%}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    figure {
+    width: 10%;
+    float: left;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/">X-Machina</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/main/">Home</a></li>
+        <li><a href="/noisemaps/">Noise Maps</a></li>
+        <li><a href="/media/clusterdata.csv">Noise Index</a></li>
+        <li><a href="/">About</a></li>
+        <!--<li><a href="/credits/">Credits</a></li>-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/login/"><span class="glyphicon glyphicon-log-in"></span> Agent Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+   <div class="col-sm-8 text-left"> 
+      <h1>Project X-Machina</h1>
+      <p></p>
+      <hr>
+      <h3>Welcome Citizen</h3>
+      
+      <p>We aim at providing a solution to curb noise pollution throughout the country by the means 
+      of this portal. According to the recent law NUC2017SIH by the Ministry of Environment, Forest and Climate change every citizen is required to get a noise controlling module installed in their cars.
+      Please refer to the steps mentioned :</p>
+      <p>1. For authorised PUC centres and authorised car service centres click on Agent Login at right side.
+      <br>2.For owners of new cars or cars under warranty, please consult your nearest AUTHORIZED centre.
+      <br>3.For owners of old cars, please get the module installed from nearest PUC centre or authorized car servicing centre.
+      </p>
+      <p>Let's dream of a noise free India<br> Jai Hind!</p>
+
+
+
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <figure class="figure" align="left">
+    <figcaption class="figure-caption">Powered By</figcaption>
+    <img src="{%static "aadhaar-logo.png"%}" class="img-rounded" width="80" height="50">
+  </figure>
+  <figure class="figure" align="left">
+  <figcaption class="figure-caption" align="centre">Curated At</figcaption>
+    <img src="{%static "smart-india-hackathon.jpg"%}" class="img-rounded" width="75" height="50" align="centre">
+  </figure
+<figure class="figure" align="left">
+  <figcaption class="figure-caption" align="left">A Brainchild Of</figcaption>
+    <img src="{%static "BITS_Pilani_campus_logo-240x180.jpg"%}" class="img-rounded" width="75" height="50" align="left" >
+  </figure>
+  </footer>  
+
+</body>
+</html>
